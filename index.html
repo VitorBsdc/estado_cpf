@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Styles/index.css">
-    <title>Estado do CPF</title>
+    <link rel="icon" href="Imagens/iconbrasil.png">
     <script src="Scripts/index.js"></script>
+    <link rel="stylesheet" href="Styles/index.css">
+    <title>CPF - ESTADO</title>
 </head>
-
 <body>
-    <h1>Estado do CPF</h1>
-    <h3>Insira o CPF com os caracteres:</h3>
-
-    <input id="entrada" type="text" placeholder="666.333.333-11">
-    <button onclick="verificarCPF()">Verificar</button>
-    <br>
-    <div>
-        <h3>Resultado:</h3><span id="saida"></span>
+    <div class="box"><!--Box-->
+        <h2>CPF - ESTADO</h2><!--Title 1-->
+        <h3>Insira o CPF (.-)</h3><!--Title 2-->
+        <input id="entrada" type="text" placeholder="000.000.000-00"><!--Input-->
+        <br><br><!--Space-->
+        <button onclick="verificarCPF()">Verificar</button><!--Botão-->
+        <h3>União federativa:</h3><span id="saida"></span><!--Result-->
     </div>
 </body>
 </html>
