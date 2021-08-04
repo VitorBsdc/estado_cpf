@@ -1,10 +1,10 @@
-function verificarCPF(){
-    let cpf = document.getElementById("entrada").value
-    let estado = ""
+function verificarCPF(){/*Função verificar*/
+    let cpf = document.getElementById("entrada").value/*Armazenar valor inserido*/
+    let estado = "";/*Variável para avaliar estado*/
 
-    let digito = parseInt(cpf.split("-")[0].split(".")[2][2])
+    let digito = parseInt(cpf.split("-")[0].split(".")[2][2]);/*Ler digito*/
 
-    switch(digito){
+    switch(digito){/*Caso - estados*/
         case 9:
             estado = ' PR ou SC'
             break
@@ -19,6 +19,7 @@ function verificarCPF(){
             break
         case 5: 
             estado = ' BA ou SE'
+            break
         case 4: 
             estado = ' PB, PE, AL ou RN'
             break
@@ -36,6 +37,5 @@ function verificarCPF(){
             break
     }
 
-    document.getElementById("saida").textContent = estado
+    document.getElementById("saida").textContent = estado;/*Resultado na saída*/
 }
-
