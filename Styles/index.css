@@ -1,5 +1,48 @@
-body{
-    background-color: rgb(115, 115, 235);
-    text-align: center;
-    margin-top: 15%;
+body{/*Body*/
+    background-image: linear-gradient(90deg, #9CECFB, #65c7f7, #0052d4);/*Fundo*/
+    text-align: center;/*Alinhamento textos*/
+    color: white;/*Cor fonte*/
+    font-family: 'Courier New', Courier, monospace;/*Fonte*/
 }
+
+.box {/*Box*/
+    background-image: linear-gradient(90deg, #000000, #434343);/*Cor box*/
+    position: absolute;/*Absoluta nos elementos*/
+    top: 50%;/*Acima*/
+    left: 50%;/*Esquerda*/
+    transform: translate(-50%, -50%);/*Ajuste*/
+    padding: 15px;/*Distância elementos*/
+    border-radius: 30px;/*Bordas redondas*/
+    padding-bottom: 30px;/*Padding abaixo*/
+    box-shadow: 0 5px 25px 10px white;/*Sombreamento*/
+}
+
+input {/*Input*/
+    padding: 15px;/*Tamanho*/
+    border: none;/*Borda nula*/
+    outline: none;/*Linha de fora nula*/
+    border-radius: 7px;/*Bordas redondas*/
+}
+
+button {/*Botão*/
+    padding: 15px;/*Tamanho*/
+    border: none;/*Borda nula*/
+    outline: none;/*Linha de fora nula*/
+    border-radius: 7px;/*Bordas redondas*/
+    cursor: pointer;/*Cursor sobre*/
+    width: 50%;
+}
+
+button:hover {/*Curso sobre botão*/
+    background-color: rgb(6, 143, 6);/*Cor fundo sobre*/
+    color: white;/*Cor fonte*/
+}
+
+
+
+/*display: flex;            Forma Flexbox.
+align-items: center;
+justify-content: center;*/
+
+/*display: grid;            Forma grid;
+place-items: center;*/
